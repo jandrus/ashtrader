@@ -1,0 +1,12 @@
+#+title: Ashtrader
+#+AUTHOR: James Andrus
+
+
+* Table of Contents :toc:
+- [[#about][About]]
+- [[#build-from-source][Build from Source]]
+
+* About
+Ashtrader is a Tauri application that allows the user to utilize the Kraken API suite to place market buy/sell orders and track their portfolio.
+
+* Build from Source
