@@ -10,3 +10,30 @@
 Ashtrader is a Tauri application that allows the user to utilize the Kraken API suite to place market buy/sell orders and track their portfolio.
 
 * Build from Source
+1. Install requirements:
+   #+BEGIN_SRC bash
+    sudo apt install libwebkit2gtk-4.0-dev \
+                        build-essential \
+                        curl \
+                        wget \
+                        file \
+                        libssl-dev \
+                        libgtk-3-dev \
+                        libayatana-appindicator3-dev \
+                        librsvg2-dev \
+                        git \
+                        npm \
+                        cargo
+   #+END_SRC
+2. Install Node packages:
+   #+BEGIN_SRC bash
+    npm install
+   #+END_SRC
+3. Install Tauri via Cargo (Will take a few minutes):
+   #+BEGIN_SRC bash
+    cargo install tauri-cli
+   #+END_SRC
+4. Run project (Will take a few minutes):
+   #+BEGIN_SRC bash
+    cargo tauri dev
+   #+END_SRC
