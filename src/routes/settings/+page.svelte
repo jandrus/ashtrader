@@ -5,6 +5,7 @@
 	import ChangeEmail from '$lib/components/settings/ChangeEmail.svelte';
 	import RemoveKrakenKeys from '$lib/components/settings/RemoveKrakenKeys.svelte';
 	import ChangePassword from '$lib/components/settings/ChangePassword.svelte';
+	import ChangeTheme from '$lib/components/settings/ChangeTheme.svelte';
 	import AddKraken from '$lib/components/settings/AddKraken.svelte';
 	import Welcome from '$lib/components/settings/Welcome.svelte';
 
@@ -30,6 +31,9 @@
 				</h2>
 			</div>
 			<li class="menu-title text-primary">User</li>
+			<li>
+				<a href="/settings" on:click={() => (section = 'change_theme')}>Change Theme</a>
+			</li>
 			<li>
 				<a href="/settings" on:click={() => (section = 'change_password')}>Change Password</a>
 			</li>
@@ -59,6 +63,8 @@
 			<ChangeEmail {err} />
 		{:else if section == 'change_password'}
 			<ChangePassword {err} />
+		{:else if section == 'change_theme'}
+			<ChangeTheme />
 		{:else if section == 'add_kraken'}
 			<AddKraken {err} />
 		{:else if section == 'rm_kraken_keys'}
