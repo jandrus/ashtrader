@@ -46,16 +46,16 @@
 </script>
 
 <g transform={`translate(${xAccessorScaled} 0)`}>
-	<text class="text" y={-20} dy="0.8em" text-anchor="middle">
+	<text class="text" y={-35} dy="0.8em" text-anchor="middle">
 		{formatXLabel(xLabel)}
+	</text>
+	<text class="text" y={-19} dy="0.8em" text-anchor="middle">
+		{formatYLabel(yLabel)}
 	</text>
 	<line class="line" x1={0} x2={0} y1={yAccessorScaled} y2={innerHeight} />
 </g>
 
 <g transform={`translate(0 ${yAccessorScaled})`}>
-	<text class="text" dx={-10} dy="0.34em" text-anchor="end">
-		{formatYLabel(yLabel)}
-	</text>
 	<line class="line" x1={xAccessorScaled} x2={0} y1={0} y2={0} />
 </g>
 
@@ -65,6 +65,6 @@
 	}
 	.line {
 		stroke: #dc267f;
-		stroke-width: 1;
+		stroke-width: 2;
 	}
 </style>

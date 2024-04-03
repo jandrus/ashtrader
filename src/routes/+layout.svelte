@@ -5,6 +5,7 @@
 	import { themeChange } from 'theme-change';
 	import { onMount } from 'svelte';
 
+	document.addEventListener('contextmenu', (event) => event.preventDefault());
 	onMount(() => themeChange());
 </script>
 
